@@ -27,7 +27,6 @@ function App() {
       } else {
         setBooks(data.docs);
 
-        // collect unique authors
         const authors = new Set();
         data.docs.forEach((b) => {
           if (b.author_name) {
@@ -41,7 +40,6 @@ function App() {
     }
   };
 
-  // filter books by selected author
   const filteredBooks = selectedAuthor
     ? books.filter(
         (book) =>
@@ -51,7 +49,8 @@ function App() {
 
   return (
     <div className={styles.container}>
-      <h1>📚 Book Finder</h1>
+      <marquee>search for any book | knowledge is divine</marquee>
+      <h1>📚Hi Alex !!! What Book are you picking today</h1>
       <SearchBar onSearch={fetchBooks} />
       {allAuthors.length > 0 && (
         <AuthorFilter
