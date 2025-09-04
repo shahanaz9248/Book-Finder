@@ -28,5 +28,9 @@ Built with **React**, **Material UI**, and **CSS Modules**, using the **Open Lib
 3. Books are stored in state + unique authors extracted.  
 4. `BookList` maps results → displays `BookCard` for each.  
 5. `AuthorFilter` lets user narrow results by author.  
-6. UI updates responsively across devices. 
+6. UI updates responsively across devices.
+
+
+   ## Deployment URL
+    - **https://book-finder-pdju.vercel.app/**
 
