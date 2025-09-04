@@ -1,7 +1,7 @@
 
 import React from "react";
 import Grid from "@mui/material/Grid";
-import BookCard from "./bookCard";
+import BookCard from "./BookCard";
 import styles from "./App.module.css";
 
 const BookList = ({ books }) => {

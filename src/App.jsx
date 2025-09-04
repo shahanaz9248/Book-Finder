@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
-import SearchBar from "./searchBar";
-import BookList from "./bookList";
+import SearchBar from "./SearchBar";
+import BookList from "./BookList";
 import styles from "./App.module.css";
 import AuthorFilter from "./AuthorFilter";
 
