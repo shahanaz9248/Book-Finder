@@ -1,12 +1,32 @@
-# React + Vite
+# Book Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple web application that allows users to search for books by title, view details, and filter results by author.  
+Built with **React**, **Material UI**, and **CSS Modules**, using the **Open Library API**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Features
+-  **Search by Title** – fetch books from Open Library.  
+-  **Book Display** – shows cover, title, authors, and first publish year.  
+-  **Filter by Author** – filters the  result with a dropdown.  
+-  **Responsive Design** – works on both  mobile and desktop.  
+-  **Error Handling** – messages for no results or network errors.  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  Tech Stack
+- **React** (Frontend framework)  
+- **Material UI (MUI)** (UI components)  
+- **CSS Modules** (Styling & responsiveness)  
+- **Open Library API** (Book data source)  
+
+---
+
+## Execution Flow
+1. **User enters search query** in `SearchBar`.  
+2. `App.jsx` fetches results from **Open Library API**.  
+3. Books are stored in state + unique authors extracted.  
+4. `BookList` maps results → displays `BookCard` for each.  
+5. `AuthorFilter` lets user narrow results by author.  
+6. UI updates responsively across devices. 
+
